@@ -1,10 +1,7 @@
-package cards;
 
-import cards.Card.Rank;
 import org.junit.jupiter.api.Test;
-
-import static cards.Card.Rank.KING;
-import static cards.Card.Rank.TEN;
+import static cards.cards.wkmk.Card.*;
+import static cards.cards.wkmk.Card.Rank.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class RankTest {

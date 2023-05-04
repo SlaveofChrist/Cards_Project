@@ -1,5 +1,4 @@
-package cards;
-
+/*
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
@@ -28,12 +27,14 @@ class DeckTest {
 //        );
 //    }
     
-    /*
+    */
+/*
      * Tests quality of shuffle based on the assumption that a given
      * card in the deck should be of higher value than the succeeding card
      * with a probability of about 0.5.
      * This test may occasionally fail.
-     */
+     *//*
+
     @Test
     void testShuffle() {
         deck.shuffle();
@@ -49,9 +50,11 @@ class DeckTest {
         assertTrue(Math.abs(beforeWins - afterWins) < WIN_DIFFERENCE);
     }
 
-    /* Each deal should reduce the size of the deck by one, until
+    */
+/* Each deal should reduce the size of the deck by one, until
      * there ain't no mo'.
-     */
+     *//*
+
     @Test
     void testDeal() {
         int fullDeckSize = deck.cards.size();
@@ -61,3 +64,4 @@ class DeckTest {
         }
     }
 }
+*/

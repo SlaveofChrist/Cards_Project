@@ -1,10 +1,6 @@
-package cards;
-
-import cards.Card.Suit;
 import org.junit.jupiter.api.Test;
-
-import static cards.Card.Suit.CLUBS;
-import static cards.Card.Suit.HEARTS;
+import static cards.cards.wkmk.Card.*;
+import static cards.cards.wkmk.Card.Suit.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 class SuitTest {

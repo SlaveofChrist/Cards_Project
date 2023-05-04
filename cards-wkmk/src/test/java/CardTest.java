@@ -1,12 +1,9 @@
-package cards;
 
+import cards.cards.wkmk.Card;
 import org.junit.jupiter.api.Test;
-
-import static cards.Card.*;
-import static cards.Card.Rank.ACE;
-import static cards.Card.Rank.FOUR;
-import static cards.Card.Suit.DIAMONDS;
-import static cards.Card.Suit.SPADES;
+import static cards.cards.wkmk.Card.*;
+import static cards.cards.wkmk.Card.Rank.*;
+import static cards.cards.wkmk.Card.Suit.*;
 import static org.junit.jupiter.api.Assertions.assertAll;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 

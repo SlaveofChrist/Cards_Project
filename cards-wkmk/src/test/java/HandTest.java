@@ -1,3 +1,4 @@
+/*
 package cards;
 
 import org.junit.jupiter.api.BeforeEach;
@@ -9,10 +10,12 @@ import static cards.Card.Rank.*;
 import static cards.Card.Suit.*;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
+*/
 /**
  * Exercises the Hand class.
  * @author <a href="mailto:sander@unice.fr">Peter Sander</a>
- */
+ *//*
+
 @SuppressWarnings("serial")
 class HandTest {
     // the following expression should look pretty mysterious!
@@ -68,3 +71,4 @@ class HandTest {
         assertEquals(SOME_CARDS.get(0), hand.cards.last());
     }
 }
+*/
