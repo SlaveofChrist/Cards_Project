@@ -9,7 +9,7 @@ public class Card implements Comparable<Card>{
     public static final int LESS = -1;
     public static final int MORE = 1 ;
     public static final int SAME = 0 ;
-   public enum Rank {
+    public enum Rank {
 
         TWO("two"),
         THREE("three"),
@@ -60,9 +60,9 @@ public class Card implements Comparable<Card>{
     public int compareTo(Card other){
         if (this.r.compareTo(other.r) > 0)
             return MORE;
-        if (this.r.compareTo(other.r) < 0)
+        else if (this.r.compareTo(other.r) < 0)
             return LESS;
-        if (this.r.compareTo(other.r) == 0) {
+        else{
             if (this.s.compareTo(other.s) < 0){
                 return LESS;
             }
@@ -70,7 +70,6 @@ public class Card implements Comparable<Card>{
                 return MORE;
             return SAME;
         }
-        return -2;
     }
 
     public String toString(){

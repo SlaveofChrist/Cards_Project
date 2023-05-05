@@ -1,11 +1,10 @@
-/*
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import static org.junit.jupiter.api.Assertions.*;
-import static cards.Card.Rank.*;
-import static cards.Card.Suit.*;
-import cards.Card;
-import cards.Deck;
+import static cards.cards.wkmk.Card.Rank.*;
+import static cards.cards.wkmk.Card.Suit.*;
+import cards.cards.wkmk.Card;
+import cards.cards.wkmk.Deck;
 
 class DeckTest {
     private static final int WIN_DIFFERENCE = 10;
@@ -26,21 +25,20 @@ class DeckTest {
 //                () -> assertEquals(0, deck.compare(C2, C2))
 //        );
 //    }
-    
-    */
-/*
+
+    /*
      * Tests quality of shuffle based on the assumption that a given
      * card in the deck should be of higher value than the succeeding card
      * with a probability of about 0.5.
      * This test may occasionally fail.
-     *//*
+     */
 
     @Test
     void testShuffle() {
         deck.shuffle();
         int beforeWins = 0;
         int afterWins = 0;
-        for (int i = 0; i < deck.cards.size() - 1; i++) {
+        for (int i = 0; i < deck.getCards().size() - 1; i++) {
             if (deck.get(i).compareTo(deck.get(i + 1)) < 0) {
                 afterWins++;
             } else {
@@ -50,18 +48,16 @@ class DeckTest {
         assertTrue(Math.abs(beforeWins - afterWins) < WIN_DIFFERENCE);
     }
 
-    */
 /* Each deal should reduce the size of the deck by one, until
      * there ain't no mo'.
-     *//*
+     */
 
     @Test
     void testDeal() {
-        int fullDeckSize = deck.cards.size();
-        for (int i = 0; i < deck.cards.size(); i++) {
-            assertEquals(fullDeckSize - i, deck.cards.size());
+        int fullDeckSize = deck.getCards().size();
+        for (int i = 0; i < deck.getCards().size(); i++) {
+            assertEquals(fullDeckSize - i, deck.getCards().size());
             deck.draw();
         }
     }
 }
-*/
